@@ -21,6 +21,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func restart(_ segue: UIStoryboardSegue) {
+        priceField.text = "0"
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // 次の画面を取り出す
+        let viewController = segue.destinationViewController as! PercentViewController
+        
+        // 金額フィールドの文字列数値に変換する
+        if let price = Int(priceField.text!) {
+            viewController.price = price
+        }
+    }
 
     @IBAction func tap1Button(_ sender: AnyObject) {
         let value = priceField.text! + "1"

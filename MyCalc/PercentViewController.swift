@@ -11,7 +11,9 @@ import UIKit
 class PercentViewController: UIViewController {
 
     @IBOutlet weak var percentField: UITextField!
-
+    
+    var price: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,19 @@ class PercentViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue (segue: UIStoryboardSegue, sender: AnyObject?) {
+        // 次の画面を取り出す
+        let viewController = segue.destinationViewController as! ResultViewController
+        
+        // 金額の受け渡し
+        viewController.price = price
+        // 割引金額フィールドの文字列を数値に変換する
+        if let discountPercent = Int(percentField.text!) {
+            viewController.discountPercent = discountPercent
+        }
+        
     }
     
     @IBAction func tap1Button(_ sender: AnyObject) {
