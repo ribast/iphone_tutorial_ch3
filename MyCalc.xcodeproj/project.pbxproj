@@ -12,6 +12,7 @@
 		030DC7FC21B28D6B00CADC23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030DC7FA21B28D6B00CADC23 /* Main.storyboard */; };
 		030DC7FE21B28D6B00CADC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030DC7FD21B28D6B00CADC23 /* Assets.xcassets */; };
 		030DC80121B28D6B00CADC23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030DC7FF21B28D6B00CADC23 /* LaunchScreen.storyboard */; };
+		034799AB21B2BA33009280FC /* PercentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034799AA21B2BA33009280FC /* PercentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		030DC7FD21B28D6B00CADC23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		030DC80021B28D6B00CADC23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		030DC80221B28D6B00CADC23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034799AA21B2BA33009280FC /* PercentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +56,10 @@
 		030DC7F521B28D6B00CADC23 /* MyCalc */ = {
 			isa = PBXGroup;
 			children = (
-				030DC7F621B28D6B00CADC23 /* AppDelegate.swift */,
 				030DC7F821B28D6B00CADC23 /* ViewController.swift */,
 				030DC7FA21B28D6B00CADC23 /* Main.storyboard */,
+				030DC7F621B28D6B00CADC23 /* AppDelegate.swift */,
+				034799AA21B2BA33009280FC /* PercentViewController.swift */,
 				030DC7FD21B28D6B00CADC23 /* Assets.xcassets */,
 				030DC7FF21B28D6B00CADC23 /* LaunchScreen.storyboard */,
 				030DC80221B28D6B00CADC23 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				030DC7F921B28D6B00CADC23 /* ViewController.swift in Sources */,
 				030DC7F721B28D6B00CADC23 /* AppDelegate.swift in Sources */,
+				034799AB21B2BA33009280FC /* PercentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +295,7 @@
 				030DC80721B28D6B00CADC23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
